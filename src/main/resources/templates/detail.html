@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Edumel- Education Html Template by dreambuzz">
+    <meta name="keywords" content="education,edumel,instructor,lms,online,instructor,dreambuzz,bootstrap,kindergarten,tutor,e learning">
+    <meta name="author" content="dreambuzz">
+
+    <title>Edumel- Education Html Template</title>
+
+    <!-- Mobile Specific Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.css">
+    <!-- Iconfont Css -->
+    <link rel="stylesheet" href="assets/vendors/awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/vendors/flaticon/flaticon.css">
+    <link rel="stylesheet" href="assets/fonts/gilroy/font-gilroy.css">
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="assets/vendors/animated-headline/animated-headline.css">
+    <link rel="stylesheet" href="assets/vendors/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl/assets/owl.theme.default.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/woocomerce.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div th:insert="blocks/header::header"></div>
+<div class="container mt-5">
+    <div class="card">
+        <div th:each="t:${test}" class="alert alert-info mt-2">
+            <p th:text="${t.getUser()}"/>
+            <p th:text="${t.getAnswer1()}"/>
+            <p th:text="${t.getAnswer2()}"/>
+            <p th:text="${t.getAnswer3()}"/>
+            <p th:text="${t.getAnswer4()}"/>
+            <p th:text="${t.getAnswer5()}"/>
+            <form method="post">
+                <input type="text" name="disc">
+                <button type="submit">Принять задание</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div th:insert="blocks/footer::footer"></div>
+<!--
+Essential Scripts
+=====================================-->
+
+<!-- Main jQuery -->
+<script src="/assets/vendors/jquery/jquery.js"></script>
+<!-- Bootstrap 5:0 -->
+<script src="/assets/vendors/bootstrap/popper.min.js"></script>
+<script src="/assets/vendors/bootstrap/bootstrap.js"></script>
+<!-- Counterup -->
+<script src="/assets/vendors/counterup/waypoint.js"></script>
+<script src="/assets/vendors/counterup/jquery.counterup.min.js"></script>
+<!--  Owl Carousel -->
+<script src="/assets/vendors/owl/owl.carousel.min.js"></script>
+<!-- Isotope -->
+<script src="/assets/vendors/isotope/jquery.isotope.js"></script>
+<script src="/assets/vendors/isotope/imagelaoded.min.js"></script>
+<!-- Animated Headline -->
+<script src="/assets/vendors/animated-headline/animated-headline.js"></script>
+<!-- Magnific Popup -->
+<script src="/assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="/assets/js/script.js"></script>
+
+</body>
+</html>

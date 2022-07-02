@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="t:${test}">
+    <h3>Rise test by </h3>
+    <h3 th:text="${t.getUser()}"></h3>
+    <a th:href="'/teacherJava/'+${t.getId()}" class="btn btn-primary">Подробнее</a>
+</div>
+</body>
+</html>
