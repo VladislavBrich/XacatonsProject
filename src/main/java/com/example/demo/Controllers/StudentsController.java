@@ -1,6 +1,6 @@
 package com.example.demo.Controllers;
 
-import com.example.xacton_trying_2.repositories.TestRepo;
+import com.example.demo.repositories.TestRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

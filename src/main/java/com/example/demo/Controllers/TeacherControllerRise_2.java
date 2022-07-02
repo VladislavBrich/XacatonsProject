@@ -1,9 +1,9 @@
 package com.example.demo.Controllers;
 
-import com.example.xacton_trying_2.Models.AnswerModel;
-import com.example.xacton_trying_2.Models.TestModel;
-import com.example.xacton_trying_2.repositories.AnswerRepo;
-import com.example.xacton_trying_2.repositories.TestRepo;
+import com.example.demo.Models.AnswerModel;
+import com.example.demo.Models.TestModel;
+import com.example.demo.repositories.AnswerRepo;
+import com.example.demo.repositories.TestRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

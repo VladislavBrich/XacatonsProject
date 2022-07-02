@@ -1,6 +1,7 @@
 package com.example.demo.repositories;
 
-import com.example.xacton_trying_2.Models.AnswerModel;
+
+import com.example.demo.Models.AnswerModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

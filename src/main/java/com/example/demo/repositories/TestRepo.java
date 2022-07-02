@@ -1,6 +1,6 @@
 package com.example.demo.repositories;
 
-import com.example.xacton_trying_2.Models.TestModel;
+import com.example.demo.Models.TestModel;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
